@@ -1,0 +1,6 @@
+Start
+- 0m
+- Error with docker (fix for 10 mins)
+- docker compose up -d
+- Container port mixup has already been fixed. 
+- 20 mins 
