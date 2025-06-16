@@ -169,7 +169,7 @@ With unnested As (
 	 	unnest (season_stats) :: season_stats AS season_stats
 	 From players
 	 where current_season = 2000
-	 and player_name = 'Avery Johnson'
+    and player_name LIKE '%Mich%l%Jordan%';
 )
 select player_name,
 	(season_stats::season_stats).*
@@ -181,13 +181,7 @@ select player_name,
 UNNEST(season_stats) AS season_stats
 from players
 where current_season = 2000
-and player_name = 'Avery Johnson';
-
-Select * from players
-Where current_season = 2000
-and player_name = 'Avery Johnson';
-Select * from players where current_season = 2000 ;
-
+and player_name LIKE '%Mich%l%Jordan%';
 
 select * from players where current_season = 2001
 and player_name LIKE '%Mich%l%Jordan%';
